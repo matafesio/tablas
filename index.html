@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <style>
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    #customers td, #customers th {
+        border: 1px solid #1a06f99a;
+        padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f40b0b;}
+    #customers tr:nth-child(odd){background-color: #11e376;}
+    
+    #customers tr:hover {background-color: #3b8dd4;}
+    
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #7878df;
+        color: rgb(0, 0, 0);
+    }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVOLUCIÓN DE LAS APLICACIONES WEB</title>
+    
 </head>
 <body>
     <p>
@@ -14,7 +40,7 @@
         <iframe width="460" height="215" src="https://www.youtube.com/embed/i7fY7BDlnHg" title="Evolución de la Web 1.0, 2.0, 3.0 y 4.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 <br>
-        <table border="6" style="width: auto; height: auto;">
+        <table border="50" style="width: auto; height: auto;" id="customers">
             <tr style="text-align: center;">
                 <td colspan="4" ><h1>Tabla de datos de clientes</h1></td>
             </tr>
@@ -30,7 +56,7 @@
               <td>Internet</td>
               <td>Aparecen :
                 MILNET: caracter militar. INTERNET: naturaleza publica, orientada al mundo académico, científico e industrial.</td>
-                <td><img src="img/inter.jpg" width="120" height="130"</td>
+                <td><img src="img/inter.jpg" width="220" height="180"</td>
               <td><pre>editorial, E. (2014, August 15). 
 Internet - Concepto, tipos, servicios, usos y navegadores. 
 Concepto.<a href="https://concepto.de/internet/#:~:text=Internet%20es%20una%20red%20de,utilizaci%C3%B3n%20de%20un%20lenguaje%20universal." title="internet">link</a></pre></td>
@@ -39,28 +65,31 @@ Concepto.<a href="https://concepto.de/internet/#:~:text=Internet%20es%20una%20re
             <tr style="text-align: center;">
               <td>Web 1.0</td>
               <td>En la web 1.0 la información era unidireccional y el papel de las personas únicamente era consumir el contenido. Era la forma más básica que adoptó Internet. Durante esta época los CMS no existían, y WordPress no era la base de la gran mayoría de las webs que se alojan en Internet.</td>
-              <td><img src="img/1.0.png" width="120" height="130"</td>
-              <td>  <pre>Estudio, T. (2022, November 22). Web 1.0, web 2.0 y web 3.0. Torresburriel Estudio.<a href="https://torresburriel.com/weblog/web1-web2-web3-2/#:~:text=En%20la%20web%201.0%20la,que%20se%20alojan%20en%20Internet." title="web 1.0">link</a></pre></td>
+              <td><img src="img/1.0.png" width="220" height="180"</td>
+              <td>  <pre>Estudio, T. (2022, November 22). Web 1.0, web 2.0 y web 3.0. 
+Torresburriel Estudio.<a href="https://torresburriel.com/weblog/web1-web2-web3-2/#:~:text=En%20la%20web%201.0%20la,que%20se%20alojan%20en%20Internet." title="web 1.0">link</a></pre></td>
               
             </tr>
             <tr style="text-align: center;">
                 <td>Web 2.0</td>
                 <td>La web 2.0, también conocida como la web social, se caracterizó por la creación y el intercambio de contenidos por parte de los usuarios. Plataformas como blogs, redes sociales y sitios de alojamiento de videos permitieron a los usuarios generar contenido y colaborar en línea.</td>    
-                <td><img src="img/web_2.0.jpg" width="120" height="130"></td>
-                <td>  <pre>García, M. (2017, June 30). ¿Qué es y para qué sirve la web 2.0? Aula 10 Centro de Formación. <a href="https://aula10formacion.com/blog/blogque-es-y-para-que-sirve-la-web-2-0/" title="web 2.0">link</a></pre>
+                <td><img src="img/web_2.0.jpg" width="220" height="180"></td>
+                <td>  <pre>García, M. (2017, June 30). 
+¿Qué es y para qué sirve la web 2.0? Aula 10 Centro de Formación. <a href="https://aula10formacion.com/blog/blogque-es-y-para-que-sirve-la-web-2-0/" title="web 2.0">link</a></pre>
                 </td>
             </tr>
             <tr style="text-align: center;">
                 <td>Web 3.0</td>
                 <td>El objetivo de la Web 3.0 es el de crear webs más inteligentes, conectadas, abiertas y adaptadas a cada usuario. En este contexto, los usuarios pueden crear contenido mientras lo poseen, controlan y monetizan a través de la implementación de tecnología blockchain y criptomonedas o NFTs</td>
-                <td><img src="img/3.0.jpg" width="120" height="130"></td>
-                <td>  <pre>ecanorea. (2022, January 20). Web 3.0: La Nueva Revolución Internet. Plain Concepts. <a href="https://www.plainconcepts.com/es/que-es-web-3/#:~:text=El%20objetivo%20de%20la%20Web,blockchain%20y%20criptomonedas%20o%20NFTs." title="web 3.0">link</a></pre>
+                <td><img src="img/3.0.jpg" width="220" height="180"></td>
+                <td>  <pre>ecanorea. (2022, January 20). Web 3.0: 
+La Nueva Revolución Internet. Plain Concepts. <a href="https://www.plainconcepts.com/es/que-es-web-3/#:~:text=El%20objetivo%20de%20la%20Web,blockchain%20y%20criptomonedas%20o%20NFTs." title="web 3.0">link</a></pre>
                 </td>
             </tr>
             <tr style="text-align: center;">
                 <td>Web 4.0</td>
                 <td>La web 4.0 es aquella en donde la experiencia del usuario es elemental al diseñar o crear plataformas, productos y servicios. "Se potencia la web semántica con el aporte de la inteligencia artificial para así proveerle a los consumidores una mejor experiencia".</td>
-                <td><img src="img/4.0.jpg" width="120" height="130"></td>
+                <td><img src="img/4.0.jpg" width="220" height="180"></td>
                 <td> <pre>¿Qué es la web 4.0 y por qué debes estar preparado para lo que se viene? (n.d.).
  Conexión ESAN. Retrieved February 26, 2024, from <a href="https://www.esan.edu.pe/conexion-esan/que-es-la-web-40-y-por-que-debes-estar-preparado-para-lo-que-se-viene#:~:text=La%20web%204.0%20es%20aquella,los%20consumidores%20una%20mejor%20experiencia%22." title="web 4.0">link</a></pre>
                 </td>
